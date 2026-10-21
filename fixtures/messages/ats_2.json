@@ -1,0 +1,9 @@
+{
+  "id": "ats_2",
+  "subject": "Application update",
+  "body": "Your application is still under review for the role at RealEmployer.",
+  "from": "notifications@lever.co",
+  "from_name": "Lever",
+  "category_hint": "update",
+  "notes": "ATS brand is not employer"
+}

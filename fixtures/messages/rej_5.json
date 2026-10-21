@@ -1,0 +1,8 @@
+{
+  "id": "rej_5",
+  "subject": "Update on your application",
+  "body": "Unfortunately we will not be proceeding with your candidacy for Backend Engineer at Contoso5. We wish you the best.",
+  "from": "recruiting@contoso5.example",
+  "from_name": "Contoso5 Recruiting",
+  "category_hint": "rejection"
+}

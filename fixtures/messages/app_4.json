@@ -1,0 +1,8 @@
+{
+  "id": "app_4",
+  "subject": "Thanks for applying",
+  "body": "Thank you for your application for Software Engineer 4 at Acme4 Corp. We received your application and will review it shortly.",
+  "from": "noreply@acme4.example",
+  "from_name": "Acme4 Careers",
+  "category_hint": "application_confirmation"
+}

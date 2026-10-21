@@ -1,0 +1,9 @@
+{
+  "id": "ats_1",
+  "subject": "Application submitted",
+  "body": "Thank you for your application for Product Manager at RealEmployer. We received your application.",
+  "from": "no-reply@greenhouse.io",
+  "from_name": "Greenhouse",
+  "category_hint": "application_confirmation",
+  "notes": "ATS brand is not employer"
+}

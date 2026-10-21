@@ -1,0 +1,7 @@
+{
+  "id": "int_5",
+  "subject": "Interview invitation",
+  "body": "We would like to schedule a call to interview you for the Platform Engineer position at Nova5.",
+  "from": "talent@nova5.example",
+  "category_hint": "interview"
+}

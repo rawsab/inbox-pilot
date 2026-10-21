@@ -1,0 +1,7 @@
+{
+  "id": "nr_3",
+  "subject": "Password reset",
+  "body": "Click here to reset your password for your account.",
+  "from": "security@saas.example",
+  "category_hint": "not_recruiting"
+}

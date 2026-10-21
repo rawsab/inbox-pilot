@@ -1,0 +1,7 @@
+{
+  "id": "int_3",
+  "subject": "Take-home assessment",
+  "body": "Please complete this assessment for the Platform Engineer role at Nova3.",
+  "from": "talent@nova3.example",
+  "category_hint": "interview"
+}

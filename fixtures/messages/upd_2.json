@@ -1,0 +1,7 @@
+{
+  "id": "upd_2",
+  "subject": "Update on your application",
+  "body": "Just checking in about your application — it is still under review for Data Analyst at Initech2.",
+  "from": "recruiter@initech2.example",
+  "category_hint": "update"
+}

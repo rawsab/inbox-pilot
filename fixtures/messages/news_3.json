@@ -1,0 +1,7 @@
+{
+  "id": "news_3",
+  "subject": "Weekly job alert digest #3",
+  "body": "Your weekly career newsletter and job alert digest. Many openings this week. Unsubscribe anytime.",
+  "from": "digest@jobboard3.example",
+  "category_hint": "newsletter"
+}

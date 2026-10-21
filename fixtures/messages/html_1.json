@@ -1,0 +1,8 @@
+{
+  "id": "html_1",
+  "subject": "Application received",
+  "body": "Thank you for your application for Designer at HtmlCo. We received your application. <script>alert(1)</script>",
+  "from": "careers@htmlco.example",
+  "category_hint": "application_confirmation",
+  "notes": "script-like content treated as text"
+}

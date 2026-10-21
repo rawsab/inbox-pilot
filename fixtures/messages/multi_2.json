@@ -1,0 +1,8 @@
+{
+  "id": "multi_2",
+  "subject": "Update",
+  "body": "Interview next week at RedCo. Unfortunately we will not be proceeding at BlueCo.",
+  "from": "recruiter@agency.example",
+  "category_hint": "unknown",
+  "notes": "conflicting events in one message"
+}

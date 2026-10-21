@@ -1,0 +1,8 @@
+{
+  "id": "fwd_1",
+  "subject": "Fwd: Interview request",
+  "body": "Forwarded message:\nWe would like to schedule a call to interview you for SRE at ForwardCo.",
+  "from": "me@student.example",
+  "category_hint": "interview",
+  "notes": "forwarded interview"
+}

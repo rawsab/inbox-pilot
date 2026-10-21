@@ -1,0 +1,7 @@
+{
+  "id": "nr_4",
+  "subject": "Package delivered",
+  "body": "Your package was delivered today.",
+  "from": "tracking@shipper.example",
+  "category_hint": "not_recruiting"
+}

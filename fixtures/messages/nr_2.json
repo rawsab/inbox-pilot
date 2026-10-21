@@ -1,0 +1,7 @@
+{
+  "id": "nr_2",
+  "subject": "Your invoice",
+  "body": "Invoice #1001 is attached for your recent purchase.",
+  "from": "billing@shop.example",
+  "category_hint": "not_recruiting"
+}

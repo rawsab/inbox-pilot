@@ -1,0 +1,9 @@
+{
+  "id": "amb_3",
+  "subject": "Re: application",
+  "body": "See below.",
+  "from": "mixed@example.com",
+  "quoted": "On Mon wrote:\nWe received your application for Designer at DualCo.",
+  "category_hint": "unknown",
+  "notes": "quoted history should not drive a new event alone"
+}

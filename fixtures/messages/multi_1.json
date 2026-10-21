@@ -1,0 +1,8 @@
+{
+  "id": "multi_1",
+  "subject": "Applications",
+  "body": "Thank you for your application for Analyst at Alpha Inc. Also regarding your application for Analyst at Beta LLC.",
+  "from": "noreply@ats.example",
+  "category_hint": "unknown",
+  "notes": "multiple employers"
+}

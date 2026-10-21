@@ -1,0 +1,8 @@
+{
+  "id": "off_5",
+  "subject": "Offer of employment",
+  "body": "We are pleased to offer you the Software Engineer role at Globex5. This is an explicit offer of employment.",
+  "from": "offers@globex5.example",
+  "from_name": "Globex5 HR",
+  "category_hint": "offer"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "miss_1",
+  "subject": "Career newsletter",
+  "body": "This career newsletter lists many roles. No single employer. Unsubscribe link below.",
+  "from": "news@board.example",
+  "category_hint": "newsletter",
+  "notes": "company candidates may remain empty"
+}

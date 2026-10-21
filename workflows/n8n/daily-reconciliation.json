@@ -1,0 +1,48 @@
+{
+  "name": "Inbox Pilot — daily reconciliation",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [{ "field": "days", "daysInterval": 1 }]
+        }
+      },
+      "id": "schedule",
+      "name": "Daily Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://api:3000/internal/scans",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer {{$env.SCHEDULER_BEARER_TOKEN}}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\"account_id\": \"{{$env.INBOX_ACCOUNT_ID}}\", \"request_id\": \"{{$now.toISO()}}-reconcile\", \"kind\": \"reconcile\"}"
+      },
+      "id": "reconcile",
+      "name": "Request reconciliation",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [280, 0]
+    }
+  ],
+  "connections": {
+    "Daily Trigger": {
+      "main": [[{ "node": "Request reconciliation", "type": "main", "index": 0 }]]
+    }
+  },
+  "meta": {
+    "notes": "Sanitized export. Backend owns deduplication and execution."
+  }
+}
