@@ -1,0 +1,30 @@
+{
+  "name": "@inbox-pilot/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "fixtures:replay": "tsx src/fixtures-replay.ts",
+    "jobs:drain": "tsx src/drain-jobs.ts"
+  },
+  "dependencies": {
+    "@inbox-pilot/contracts": "workspace:*",
+    "@inbox-pilot/db": "workspace:*",
+    "@inbox-pilot/gmail": "workspace:*",
+    "@inbox-pilot/jev": "workspace:*",
+    "@inbox-pilot/parser": "workspace:*",
+    "@inbox-pilot/policy": "workspace:*",
+    "drizzle-orm": "^0.40.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
