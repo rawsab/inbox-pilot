@@ -2,8 +2,6 @@
 
 Jev-gated inbox autopilot: a personal Gmail assistant that organizes recruiting email into namespaced labels, explains every decision, and asks for review when evidence is weak or consequences are sensitive.
 
-This repository is at **Stage 2**: Gmail ingestion (mock or live OAuth), durable discovery, MIME/parser provenance, scan status UI, and dry-run decisions. Gmail **writes** remain disabled in dry run (default).
-
 ## Prerequisites
 
 - Node.js 22 (see `.nvmrc`)
@@ -78,20 +76,21 @@ export TYPESAFE_API_KEY=tsk_...
 pnpm --filter @inbox-pilot/jev spike
 ```
 
-## What Stage 2 proves
+## Capabilities
 
-- Mock or live Gmail connect with scope explanation and dry-run default
-- Paginated discovery (200-message synthetic mailbox), history cursor, coverage-gap recovery
-- MIME decode, HTML-to-text, ATS templates; company candidates never silently use ATS brands
-- Scan status + parser inspection APIs; n8n workflows send account refs only
-- Processing jobs persist decisions with **zero** Gmail mutations in dry run
+- Mock or live Gmail connect with a clear scope explanation
+- Paginated discovery, history sync, and coverage-gap recovery
+- Deterministic MIME/HTML parsing and ATS-aware company/role candidates (ATS brands are never treated as the employer)
+- Jev-backed classification with a backend policy that can abstain or send mail to review
+- Dry-run mode that proposes labels without mutating Gmail
+- Scan status and parser inspection; n8n schedules scans with account references only
 
 ## Modes
 
 | Mode | Behavior |
 | --- | --- |
 | `dry_run` (default) | Propose labels; never mutate Gmail (including label creation) |
-| `labeling` | Stage 4+; add only app-owned labels after policy / human approval |
+| `labeling` | Add only app-owned labels after policy and/or human approval |
 
 Sensitive categories (interview, offer, rejection) always require human approval.
 
