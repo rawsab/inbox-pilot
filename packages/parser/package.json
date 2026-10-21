@@ -1,0 +1,31 @@
+{
+  "name": "@inbox-pilot/parser",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@inbox-pilot/contracts": "workspace:*",
+    "html-to-text": "^10.0.1",
+    "mailparser": "^3.10.0"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^26.6.5",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
