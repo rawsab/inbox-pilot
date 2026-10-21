@@ -1,0 +1,29 @@
+{
+  "name": "@inbox-pilot/gmail",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@inbox-pilot/contracts": "workspace:*",
+    "google-auth-library": "^11.3.1",
+    "googleapis": "^186.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
